@@ -8,10 +8,14 @@ import KestaneAgac from '../../../public/images/carousel-images/kestane-agac.png
 import KestaneAgac2 from '../../../public/images/carousel-images/kestane-agac2.jpg';
 import KestaneSecme from '../../../public/images/carousel-images/kestane-secme.jpg';
 import KestaneDikenli from '../../../public/images/carousel-images/kestane-dikenli.jpg';
+import KestaneSekerciDuble from '../../../public/images/products/kestane.jpg';
+import KestaneKaraAsi from '../../../public/images/products/kara-asi.jpg';
+import KestaneInebolu from '../../../public/images/products/inebolu.jpg';
+import Product from '@/Components/Product';
 export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<{ laravelVersion: string, phpVersion: string }>) {
   return (
     <>
-    
+
       <Head title="Welcome" />
       <div>
         <Navbar />
@@ -24,6 +28,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
               <img src={KestaneSecme} alt="..." />
               <img src={KestaneDikenli} alt="..." />
             </Carousel>
+          </div>
+          <div className='gap-x-8 gap-y-4  flex justify-center flex-wrap mt-6'>
+            <Product productInfo="Aydın Şekerci Kestane 1(KG)" KestaneSekerciDuble={KestaneSekerciDuble}/>
+            <Product productInfo="Bursa İnebolu 5(KG)" KestaneSekerciDuble={KestaneKaraAsi}/>
+            <Product productInfo="Kara Aşı Kestane 1(KG)" KestaneSekerciDuble={KestaneInebolu}/>
+            <Product productInfo="Kara Aşı Kestane 1(KG)" KestaneSekerciDuble={KestaneInebolu}/>
+            <Product productInfo="Kara Aşı Kestane 1(KG)" KestaneSekerciDuble={KestaneInebolu}/>
           </div>
           <div className='gap-x-8 gap-y-4  flex justify-center flex-wrap mt-6'>
 
